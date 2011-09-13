@@ -10,6 +10,11 @@ gem 'sqlite3'
 
 gem 'devise'
 
+gem 'compass', '>= 0.11.5'
+gem 'haml'
+gem 'html5-boilerplate'
+gem 'formtastic'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
