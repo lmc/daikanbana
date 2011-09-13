@@ -1,0 +1,14 @@
+== DaiKanbana
+
+A webapp to make it easier for teams to use Kanban with Github
+By Luke Mcildoon, 2011 (https://github.com/lmc)
+
+
+== Features
+
+* Display tags on pull requests
+* Alert you to pull requests you need to review
+* Show which users still need to review pull requests
+* One-click deploys of branches to Heroku for testing
+* Allows users to see who is testing what branch, when
+* Uses Github API keys (no need for passwords)
