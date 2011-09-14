@@ -5,11 +5,20 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+
+#environment
 gem 'sqlite3'
 
 
+#controllers/rack
 gem 'devise'
 
+
+#models
+gem 'state_machine'
+
+
+#views/frontend
 gem 'compass', '>= 0.11.5'
 gem 'haml'
 gem 'html5-boilerplate'
