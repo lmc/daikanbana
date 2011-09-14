@@ -1,0 +1,12 @@
+%h2 Register
+= semantic_form_for @user do |f|
+  = f.inputs do
+    = f.input :email
+    = f.input :password
+    = f.input :password_confirmation
+
+  = f.inputs :name => "Github" do
+    = f.input :github_username
+    = f.input :github_api_key
+
+  = f.buttons

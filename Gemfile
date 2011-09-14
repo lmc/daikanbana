@@ -8,6 +8,7 @@ gem 'rails', '3.1.0'
 
 #environment
 gem 'sqlite3'
+gem 'octokit'
 
 
 #controllers/rack
