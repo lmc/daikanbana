@@ -11,3 +11,22 @@ en:
               authentication_failure: cannot be authenticated against Github
             github_api_key:
               invalid: is an invalid key format
+
+  formtastic:
+    group_names:
+      user:
+        attributes: ""
+        github: Github
+    labels:
+      user:
+        password_confirmation: Password (confirm)
+        github_username: Github Username
+        github_api_key: Github API Key
+    hints:
+      user:
+        github_api_key: Get this from <a href="https://github.com/account/admin" class="popup">your Github account admin page</a>
+
+  app:
+    name: DaiKanbana
+  users:
+    new_title: Register

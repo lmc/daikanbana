@@ -1,12 +1,12 @@
-%h2 Register
+%h2= t("users.new_title")
 = semantic_form_for @user do |f|
-  = f.inputs do
+  = f.inputs :name => t("formtastic.group_names.user.attributes") do
     = f.input :email
     = f.input :password
     = f.input :password_confirmation
 
-  = f.inputs :name => "Github" do
+  = f.inputs :name => t("formtastic.group_names.user.github") do
     = f.input :github_username
-    = f.input :github_api_key
+    = f.input :github_api_key, :hint => t("formtastic.hints.user.github_api_key").html_safe
 
   = f.buttons
