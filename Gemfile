@@ -47,10 +47,11 @@ gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'rspec'
 end
 
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'vcr'
+  gem 'fakeweb'
 end

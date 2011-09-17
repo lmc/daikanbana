@@ -57,6 +57,7 @@ GEM
     erubis (2.7.0)
     execjs (1.2.5)
       multi_json (~> 1.0)
+    fakeweb (1.3.0)
     faraday (0.7.4)
       addressable (~> 2.2.6)
       multipart-post (~> 1.1.0)
@@ -166,6 +167,7 @@ GEM
     uglifier (1.0.3)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    vcr (1.11.3)
     warden (1.0.5)
       rack (>= 1.0)
 
@@ -176,13 +178,13 @@ DEPENDENCIES
   coffee-rails (~> 3.1.0)
   compass (>= 0.11.5)
   devise
+  fakeweb
   formtastic
   haml
   html5-boilerplate
   jquery-rails
   octokit
   rails (= 3.1.0)
-  rspec
   rspec-rails
   ruby-debug19
   sass-rails (~> 3.1.0)
@@ -190,3 +192,4 @@ DEPENDENCIES
   state_machine
   turn
   uglifier
+  vcr

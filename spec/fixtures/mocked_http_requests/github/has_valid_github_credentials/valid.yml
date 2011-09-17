@@ -1,0 +1,40 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://test%2Ftoken:0123456789abcdef0123456789abcdef@github.com:443/api/v2/json/user/follow/test
+    body: !!null 
+    headers:
+      authorization:
+      - Basic aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      content-length:
+      - '0'
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.0.4
+      date:
+      - Sat, 17 Sep 2011 10:13:31 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      x-ratelimit-limit:
+      - '60'
+      etag:
+      - ! '"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"'
+      x-frame-options:
+      - deny
+      x-ratelimit-remaining:
+      - '59'
+      x-runtime:
+      - 13ms
+      content-length:
+      - '12'
+      cache-control:
+      - private, max-age=0, must-revalidate
+    body: ! '{"users":[]}'
+    http_version: '1.1'

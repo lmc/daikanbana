@@ -25,3 +25,13 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = true
 end
+
+
+require 'vcr'
+VCR.config do |c|
+  c.allow_http_connections_when_no_cassette = false
+  c.cassette_library_dir = 'spec/fixtures/mocked_http_requests'
+  c.stub_with :fakeweb
+  c.default_cassette_options = { :record => :once }
+end
+
