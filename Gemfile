@@ -13,6 +13,7 @@ gem 'octokit'
 
 #controllers/rack
 gem 'devise'
+gem 'inherited_resources'
 
 
 #models

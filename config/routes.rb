@@ -1,7 +1,9 @@
 Daikanbana::Application.routes.draw do
-  devise_for :users, :path_prefix => "/devise", :as => "devise" #namespace for devise so we can use our own routes
+  devise_for :users, :controllers => { :registrations => "registrations"}
 
-  resources :users, :only => [:new,:create], :controller => "registrations"
+  #resources :users, :only => [:new,:create], :controller => "registrations"
+
+  resource :account, :only => [:edit,:update]
 
   root :to => "change_me#index"
 end

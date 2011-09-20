@@ -8,8 +8,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me,
     :github_username, :github_api_key
 
-  validates :github_api_key, :format => { :with => /\A[0-9a-f]{32}\Z/ } #md5 hash
-  validate :validate_github_credentials
+
+  validate :validate_github_credentials, :if => :has_github_credentials?
 
 
   state_machine :status, :initial => :unregistered do

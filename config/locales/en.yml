@@ -28,5 +28,7 @@ en:
 
   app:
     name: DaiKanbana
+  accounts:
+    edit_title: Edit Account
   users:
     new_title: Register

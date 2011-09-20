@@ -1,0 +1,7 @@
+%h2= t("accounts.edit_title")
+= semantic_form_for @user, :url => account_path do |f|
+  = f.inputs :name => t("formtastic.group_names.user.github") do
+    = f.input :github_username
+    = f.input :github_api_key, :hint => t("formtastic.hints.user.github_api_key").html_safe
+
+  = f.buttons
