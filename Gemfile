@@ -55,4 +55,5 @@ group :test do
   gem 'turn', :require => false
   gem 'vcr'
   gem 'fakeweb'
+  gem 'capybara'
 end
